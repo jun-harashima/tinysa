@@ -1,22 +1,13 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-"""Tests for `suffix_array` package."""
-
-
 import unittest
-
-from suffix_array import suffix_array
+from suffix_array.suffix_array import SuffixArray
 
 
 class TestSuffix_array(unittest.TestCase):
-    """Tests for `suffix_array` package."""
 
-    def setUp(self):
-        """Set up test fixtures, if any."""
+    def test_index(self):
+        suffix_array = SuffixArray()
+        suffix_array.index('banana')
+        self.assertEqual(suffix_array.starting_positions, [5, 3, 1, 0, 4, 2])
 
-    def tearDown(self):
-        """Tear down test fixtures, if any."""
-
-    def test_000_something(self):
-        """Test something."""
+if __name__ == "__main__":
+    unittest.main()
