@@ -1,4 +1,4 @@
-class SuffixArray(list):
+class SuffixArray():
 
     def __init__(self):
         self.starting_positions = []
