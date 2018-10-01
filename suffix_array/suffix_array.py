@@ -1,5 +1,3 @@
-import os
-
 class SuffixArray():
 
     def __init__(self):
@@ -9,18 +7,18 @@ class SuffixArray():
     def index(self, text):
         self.positions = [5, 3, 1, 0, 4, 2]
 
-    def _get_suffxies_of(self, text):
+    def _get_suffixes_of(self, text):
         for i in range(len(text)):
             self.suffixes.append(text[i:])
             self.positions.append(i)
 
     def _sort_suffixes_between(self, i, j):
-        p_suffix = self.suffixes[i] # pivot suffix
-        p_position = self.positions[i] # pivot position
-        l_suffixes = [] # left suffixes
-        r_suffixes = [] # right suffixes
-        l_positions = [] # left positions
-        r_positions = [] # right positions
+        p_suffix = self.suffixes[i]  # pivot suffix
+        p_position = self.positions[i]  # pivot position
+        l_suffixes = []  # left suffixes
+        r_suffixes = []  # right suffixes
+        l_positions = []  # left positions
+        r_positions = []  # right positions
         for x in range(i + 1, j + 1):
             if self.suffixes[x] <= p_suffix:
                 l_suffixes.append(self.suffixes[x])
