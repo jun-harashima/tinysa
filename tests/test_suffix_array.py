@@ -11,14 +11,13 @@ class TestSuffix_array(unittest.TestCase):
 
     def test__get_suffixes(self):
         suffix_array = SuffixArray()
-        suffix_array._get_suffxies_of('banana')
+        suffix_array._get_suffixes_of('banana')
         suffixes = ['banana', 'anana', 'nana', 'ana', 'na', 'a']
         self.assertEqual(suffix_array.suffixes, suffixes)
 
-
     def test__sort_suffixes_between(self):
         suffix_array = SuffixArray()
-        suffix_array._get_suffxies_of('banana')
+        suffix_array._get_suffixes_of('banana')
         suffix_array._sort_suffixes_between(0, len(suffix_array.suffixes) - 1)
         sorted_suffixes = ['a', 'ana', 'anana', 'banana', 'na', 'nana']
         sorted_positions = [5, 3, 1, 0, 4, 2]
