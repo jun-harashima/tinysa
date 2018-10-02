@@ -4,10 +4,10 @@ suffix-array
 
 
 .. image:: https://img.shields.io/pypi/v/suffix_array.svg
-        :target: https://pypi.python.org/pypi/suffix_array
+        :target: https://pypi.python.org/pypi/suffix-array
 
 .. image:: https://img.shields.io/travis/jun-harashima/suffix_array.svg
-        :target: https://travis-ci.org/jun-harashima/suffix_array
+        :target: https://travis-ci.org/jun-harashima/suffix-array
 
 .. image:: https://readthedocs.org/projects/suffix-array/badge/?version=latest
         :target: https://suffix-array.readthedocs.io/en/latest/?badge=latest
