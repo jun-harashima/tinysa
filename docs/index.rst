@@ -1,5 +1,5 @@
-Welcome to suffix-array's documentation!
-======================================
+Welcome to tiny-suffix-array's documentation!
+=============================================
 
 .. toctree::
    :maxdepth: 2
