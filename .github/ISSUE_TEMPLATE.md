@@ -1,4 +1,4 @@
-* suffix-array version:
+* tiny-suffix-array version:
 * Python version:
 * Operating System:
 

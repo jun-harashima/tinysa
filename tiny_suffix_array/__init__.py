@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for suffix-array."""
+"""Top-level package for tiny-suffix-array."""
 
 __author__ = """Jun Harashima"""
 __email__ = 'j.harashima@gmail.com'

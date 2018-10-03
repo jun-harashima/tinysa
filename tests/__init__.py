@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-"""Unit test package for suffix_array."""
+"""Unit test package for tiny-suffix-array."""

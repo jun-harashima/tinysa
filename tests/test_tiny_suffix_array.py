@@ -1,22 +1,22 @@
 import unittest
-from suffix_array.suffix_array import SuffixArray
+from tiny_suffix_array.tiny_suffix_array import TinySuffixArray
 
 
 class TestSuffix_array(unittest.TestCase):
 
     def test_index(self):
-        suffix_array = SuffixArray()
+        suffix_array = TinySuffixArray()
         suffix_array.index('banana')
         self.assertEqual(suffix_array.positions, [5, 3, 1, 0, 4, 2])
 
     def test__get_suffixes(self):
-        suffix_array = SuffixArray()
+        suffix_array = TinySuffixArray()
         suffix_array._get_suffixes_of('banana')
         suffixes = ['banana', 'anana', 'nana', 'ana', 'na', 'a']
         self.assertEqual(suffix_array.suffixes, suffixes)
 
     def test__sort_suffixes_between(self):
-        suffix_array = SuffixArray()
+        suffix_array = TinySuffixArray()
         suffix_array._get_suffixes_of('banana')
         suffix_array._sort_suffixes_between(0, len(suffix_array.suffixes) - 1)
         sorted_suffixes = ['a', 'ana', 'anana', 'banana', 'na', 'nana']
