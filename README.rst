@@ -1,16 +1,16 @@
-=================
-tiny-suffix-array
-=================
+======
+tinysa
+======
 
 
-.. image:: https://img.shields.io/pypi/v/tiny-suffix-array.svg
-        :target: https://pypi.python.org/pypi/tiny-suffix-array
+.. image:: https://img.shields.io/pypi/v/tinysa.svg
+        :target: https://pypi.python.org/pypi/tinysa
 
-.. image:: https://img.shields.io/travis/jun-harashima/tiny-suffix-array.svg
-        :target: https://travis-ci.org/jun-harashima/tiny-suffix-array
+.. image:: https://img.shields.io/travis/jun-harashima/tinysa.svg
+        :target: https://travis-ci.org/jun-harashima/tinysa
 
-.. image:: https://readthedocs.org/projects/tiny-suffix-array/badge/?version=latest
-        :target: https://tiny-suffix-array.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/tinysa/badge/?version=latest
+        :target: https://tinysa.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 
 
 * Free software: MIT license
-* Documentation: https://tiny-suffix-array.readthedocs.io.
+* Documentation: https://tinysa.readthedocs.io.
 
 
 Features

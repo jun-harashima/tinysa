@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=tiny-suffix-array
+set SPHINXPROJ=tinysa
 
 if "%1" == "" goto help
 

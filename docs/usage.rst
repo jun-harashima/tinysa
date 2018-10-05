@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use tiny-suffix-array in a project::
+To use tinysa in a project::
 
-    import tiny_suffix_array
+    import tinysa

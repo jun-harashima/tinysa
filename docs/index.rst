@@ -1,4 +1,4 @@
-Welcome to tiny-suffix-array's documentation!
+Welcome to tinysa's documentation!
 =============================================
 
 .. toctree::

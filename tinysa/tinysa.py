@@ -1,4 +1,4 @@
-class TinySuffixArray():
+class TinySA():
 
     def __init__(self):
         self.suffixes = []
