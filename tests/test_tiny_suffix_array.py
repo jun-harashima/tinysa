@@ -24,6 +24,11 @@ class TestSuffix_array(unittest.TestCase):
         self.assertEqual(suffix_array.suffixes, sorted_suffixes)
         self.assertEqual(suffix_array.positions, sorted_positions)
 
+    def test_search(self):
+        suffix_array = TinySuffixArray()
+        suffix_array.index('banana')
+        self.assertEqual(suffix_array.search('ana'), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

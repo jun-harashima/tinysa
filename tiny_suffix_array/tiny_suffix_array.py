@@ -33,3 +33,17 @@ class TinySuffixArray():
             self._sort_suffixes_between(i, len(l_suffixes) - 1)
         if len(r_suffixes) > 1:
             self._sort_suffixes_between(len(l_suffixes) + 1, j)
+
+    def search(self, string):
+        begin = 0
+        end = len(self.suffixes)
+        while begin < end:
+            half = (begin + end) // 2
+            suffix = self.suffixes[half]
+            if suffix < string:
+                begin = half + 1
+            elif suffix > string:
+                end = half
+            else:
+                return half
+        return -1
