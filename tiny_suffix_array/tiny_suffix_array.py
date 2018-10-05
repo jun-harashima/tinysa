@@ -5,7 +5,8 @@ class TinySuffixArray():
         self.positions = []
 
     def index(self, text):
-        self.positions = [5, 3, 1, 0, 4, 2]
+        self._get_suffixes_of(text)
+        self._sort_suffixes_between(0, len(text) - 1)
 
     def _get_suffixes_of(self, text):
         for i in range(len(text)):
