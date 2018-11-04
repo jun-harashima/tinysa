@@ -9,29 +9,29 @@ tinysa
 .. image:: https://img.shields.io/travis/jun-harashima/tinysa.svg
         :target: https://travis-ci.org/jun-harashima/tinysa
 
-.. image:: https://readthedocs.org/projects/tinysa/badge/?version=latest
-        :target: https://tinysa.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+tinysa is a minimal implementation for constructing a suffix array.
 
+Quick Start
+===========
 
+To install tinysa, run this command in your terminal:
 
+.. code-block:: bash
 
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+   $ pip install tinysa
 
+Using tinysa, you can construct a suffix array as follows:
 
-* Free software: MIT license
-* Documentation: https://tinysa.readthedocs.io.
+.. code-block:: python
 
+   from tinysa.tinysa import TinySA
 
-Features
---------
+   suffix_array = TinySA()
+   suffix_array.index('banana')
 
-* TODO
+Then, you can find a suffix that begins with a substring as follows:
 
-Credits
--------
+.. code-block:: python
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+   position = suffix_array.search('ana')
+   print(position)  # => 1
