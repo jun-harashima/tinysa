@@ -8,9 +8,6 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
 setup(
     author="Jun Harashima",
     author_email='j.harashima@gmail.com',
@@ -29,7 +26,7 @@ setup(
     ],
     description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
     license="MIT license",
-    long_description=readme + '\n\n' + history,
+    long_description=readme,
     include_package_data=True,
     keywords='tiny suffix array',
     name='tinysa',
