@@ -33,6 +33,6 @@ setup(
     packages=find_packages(include=['tinysa']),
     test_suite='tests',
     url='https://github.com/jun-harashima/tinysa',
-    version='0.2.0',
+    version='0.2.1',
     zip_safe=False,
 )
